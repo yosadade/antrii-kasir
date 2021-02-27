@@ -4,7 +4,7 @@ import {IconAntrii1} from '../../assets';
 
 const Splash = ({navigation}) => {
   setTimeout(() => {
-    navigation.replace('MyDrawer');
+    navigation.replace('SignIn');
   }, 3000);
   return (
     <View style={styles.page}>

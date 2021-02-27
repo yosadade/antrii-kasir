@@ -1,7 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import {Food, Splash, Dashboard} from '../pages';
+import {Food, Splash, Dashboard, SignIn} from '../pages';
 import {CustomDrawerContent} from '../components';
 import {IconList} from '../assets';
 
@@ -31,6 +31,11 @@ const AuthStack = () => {
       <Stack.Screen
         name="Splash"
         component={Splash}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="SignIn"
+        component={SignIn}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

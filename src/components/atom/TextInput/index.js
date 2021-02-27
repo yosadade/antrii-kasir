@@ -1,10 +1,10 @@
 import React from 'react';
-import {StyleSheet, View, TextInput as RNTextInput} from 'react-native';
+import {StyleSheet, View, Text, TextInput as RNTextInput} from 'react-native';
 
-const TextInput = () => {
+const TextInput = ({placeholder}) => {
   return (
     <View style={styles.container}>
-      <RNTextInput style={styles.input} placeholder="Search ..." />
+      <RNTextInput style={styles.input} placeholder={placeholder} />
     </View>
   );
 };
@@ -16,19 +16,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   input: {
-    backgroundColor: 'red',
     fontFamily: 'Poppins-Light',
     color: '#FFFFFF',
     fontSize: 14,
     paddingHorizontal: 20,
-    width: 270,
-    overflow: 'hidden',
-    shadowColor: 'black',
-    shadowOffset: {
-      width: 0,
-      height: 7,
-    },
-    shadowOpacity: 0.5,
-    elevation: 4,
+    width: 450,
+    borderBottomWidth: 0.5,
+    borderBottomColor: '#8D92A3',
   },
 });
